@@ -1,0 +1,63 @@
+.nav-container {
+
+    position: sticky;
+    top: 20px;
+    z-index: 2;
+    
+    background-color:rgba(32,39,42, 0.7);
+    padding-bottom: 20px;
+    margin: 0 10px;
+
+    nav {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        margin-bottom: 10px;
+        padding: 5px 20px;
+
+        background: $navBg;
+        color: white;
+        z-index: 2;
+
+        .logo {
+            color: white;
+            width: max-content;
+            padding-right: 10px;
+        }
+
+        .logout {
+            text-decoration: none;
+            text-align: right;
+            color: rgb(155, 152, 152);
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: max-content;
+        }
+    }
+
+    .form-container {
+
+        .item-form {
+
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                margin-right: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background: $inputBg;
+                color: rgb(155, 152, 152);
+                font-size: 1.2em;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

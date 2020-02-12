@@ -1,0 +1,142 @@
+// variables colors
+
+$mainBg: #20272a;
+$mainBg: #20272a;
+$navBg: #1d2226;
+$inputBg: #3c6862;
+$btnBg: #184b43;
+$red: #860202;
+
+// font-family: 'Bowlby One SC', cursive;
+
+@import './Nav.scss';
+@import'./Sign.scss';
+@import './Spinner.scss';
+
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    background: $mainBg;
+    display: flex;
+    justify-content: center;
+}
+
+#root{
+    width: 450px;
+    min-width: 300px;
+    resize: horizontal;
+}
+
+.logo {
+    font-family: 'Bowlby One SC';
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+.main-container {
+    margin: 0 10px;
+    width: fit-content(450px);
+    margin-top: 20px;
+
+    small{
+        color: $red;
+        font-size: 1.5em;
+    }
+}
+
+.feedback {
+    color: $red;
+    margin-top: 25px;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        color: whitesmoke;
+    }
+}
+
+.todos-container {
+
+    h5 {
+        color: whitesmoke;
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+    
+    .item {
+        padding: 0px 10px;
+        background: $inputBg;
+        margin: 10px 0;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .todones-string {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+
+            .item-button {
+                background-color: $inputBg;
+                font-size: 1.7em;
+
+                &:hover {
+                    color: rebeccapurple;
+                }
+            }
+
+            .delete-icon {
+                font-size: 1.5em;
+                background-color: $inputBg;
+                border: none;
+
+                i {
+                    font-weight: 0;
+
+                    &:hover {
+                        color: rebeccapurple;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    border: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+    background: $btnBg;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        color: rgb(109, 109, 109);
+    }
+}
+
+.refresh {
+    font-weight: 100;
+    font-size: 0.5em;
+}

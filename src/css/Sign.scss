@@ -1,0 +1,87 @@
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sign-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+
+        @media (max-width: 400px) {
+            top: -100px;
+        }
+
+        .fas {
+            font-size: 2em;
+            color: white;
+        }
+
+        .sign-form {
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .contact-title {
+                color: white;
+                font-size: 2em;
+            }
+
+            input {
+
+                margin-top: 20px;
+                border-radius: 2px;
+                border: none;
+                height: 30px;
+                padding: 10px;
+
+            }
+
+            .alert {
+                color: $red;
+                font-size: 1.4em;
+                height: 50px;
+                width: 230px;
+                margin: 20px;
+                text-align: center;
+
+            }
+
+            .sign-button {
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                background: $inputBg;
+                color: white;
+                font-size: 1.2em;
+                min-width: 130px;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+
+        .sign {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            text-decoration: none;
+            background: $inputBg;     
+            color: white;
+            font-size: 1.2em;
+            min-width: 130px;
+            text-align: center;
+        }
+
+        a:nth-child(3) {
+            margin-top: 30px;
+        }
+    }
+}
